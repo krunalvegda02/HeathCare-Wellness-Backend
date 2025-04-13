@@ -11,7 +11,7 @@ const asyncHandler = (requestHandler) => {
   //? const asyncHandler = () => {() => {}}
   //? const asynshandler = () => () => {}
   
-  // ?Another mothod
+  // ?Another method
   /*  
   const asyncHandler = (requstHandler) => 
       async (req,res,next) => {
