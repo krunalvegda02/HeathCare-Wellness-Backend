@@ -1,6 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
+import { BLOOD_GROUP } from "../constants/constants.js";
 
 const userSchema = new Schema(
   {
@@ -45,7 +46,7 @@ const userSchema = new Schema(
     blood_group: {
       type: String,
       required: true,
-      enum: ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"],
+      enum: BLOOD_GROUP,
     },
     birth_date: {
       type: Date,
